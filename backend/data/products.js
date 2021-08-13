@@ -9,7 +9,9 @@ const products = [
     price: 89.99,
     countInStock: 10,
     rating: 4.5,
-    numReviews: 12
+    numReviews: 12,
+    sale: true,
+    new: false
   },
   {
     name: 'iPhone 11 Pro 256GB Memory',
@@ -21,7 +23,8 @@ const products = [
     price: 599.99,
     countInStock: 7,
     rating: 4.0,
-    numReviews: 8
+    numReviews: 8,
+    sale: true
   },
   {
     name: 'Cannon EOS 80D DSLR Camera',
@@ -33,7 +36,8 @@ const products = [
     price: 929.99,
     countInStock: 5,
     rating: 3,
-    numReviews: 12
+    numReviews: 12,
+    sale: true
   },
   {
     name: 'Sony Playstation 4 Pro White Version',
@@ -45,7 +49,8 @@ const products = [
     price: 399.99,
     countInStock: 11,
     rating: 5,
-    numReviews: 12
+    numReviews: 12,
+    new: true
   },
   {
     name: 'Logitech G-Series Gaming Mouse',
@@ -57,7 +62,8 @@ const products = [
     price: 49.99,
     countInStock: 7,
     rating: 3.5,
-    numReviews: 10
+    numReviews: 10,
+    new: true
   },
   {
     name: 'Amazon Echo Dot 3rd Generation',
@@ -69,8 +75,36 @@ const products = [
     price: 29.99,
     countInStock: 0,
     rating: 4,
-    numReviews: 12
-  }
+    numReviews: 12,
+    sale: true,
+  },
+  {
+    name: 'Logitech G-Series Gaming Mouse 1',
+    image: '/images/mouse.jpg',
+    description:
+      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
+    brand: 'Logitech',
+    category: 'Electronics',
+    price: 49.99,
+    countInStock: 7,
+    rating: 3.5,
+    numReviews: 10,
+    sale: true
+  },
+  {
+    name: 'Logitech G-Series Gaming Mouse 2',
+    image: '/images/mouse.jpg',
+    description:
+      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
+    brand: 'Logitech',
+    category: 'Electronics',
+    price: 49.99,
+    countInStock: 7,
+    rating: 3.5,
+    numReviews: 10,
+    sale: true,
+    new: true,
+  },
 ];
 
 module.exports = products;

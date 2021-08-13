@@ -38,6 +38,16 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    sale: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+    new: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
     description: {
         type: String,
         required: true
