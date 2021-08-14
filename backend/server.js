@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
+const cors = require('cors')
 const connectDB = require('./config/db');
 const productsRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
@@ -15,6 +16,8 @@ dotenv.config();
 connectDB();
 
 const app = express();
+
+app.use(cors());
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
