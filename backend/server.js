@@ -9,6 +9,7 @@ const userRoutes = require('./routes/userRoutes');
 const orderRoutes = require('./routes/orderRoutes'); 
 const uploadRoutes = require('./routes/uploadRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
+const brandRoutes = require('./routes/brandRoutes');
 const {  notFound, errorHandler  } = require('./middleware/errorMiddleware');
 
 dotenv.config();
@@ -33,6 +34,7 @@ app.get('/', (req, res) => {
 app.use('/api/products', productsRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/category', categoryRoutes);
+app.use('/api/brand', brandRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
 

@@ -3,10 +3,12 @@ const dotenv = require('dotenv')
 const users =  require('./data/users');
 const products =  require('./data/products');
 const category = require('./data/category');
+const brand = require('./data/brand');
 const User = require('./model/userModel');
 const Product = require('./model/productModel.js');
 const Order = require('./model/orderModel');
 const Category = require('./model/categoryModel');
+const Brand = require('./model/brandModal');
 const connectDB = require('./config/db');
 
 dotenv.config()
@@ -19,6 +21,7 @@ const importData = async () => {
     await Product.deleteMany()
     await User.deleteMany()
     await Category.deleteMany();
+    await Brand.deleteMany();
 
     // await User.insertMany(users);
 
@@ -34,6 +37,8 @@ const importData = async () => {
 
     await Product.insertMany(sampleProducts);
     await Category.insertMany(category);
+    await Brand.insertMany(brand);
+
 
     process.exit()
   } catch (error) {
@@ -49,6 +54,7 @@ const destroyData = async () => {
     await Product.deleteMany()
     await User.deleteMany()
     await Category.deleteMany();
+    await Brand.deleteMany();
 
     console.log('Data Destroyed!')
     process.exit()
