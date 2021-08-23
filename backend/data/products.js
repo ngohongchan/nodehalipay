@@ -96,6 +96,7 @@ const products = [
     rating: 3.5,
     numReviews: 10,
     sale: true,
+    new: true,
     featured: true
   },
   {
