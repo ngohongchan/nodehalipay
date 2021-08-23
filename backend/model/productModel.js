@@ -48,6 +48,11 @@ const productSchema = mongoose.Schema({
         required: true,
         default: false,
     },
+    featured: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
     description: {
         type: String,
         required: true
