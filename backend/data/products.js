@@ -90,7 +90,7 @@ const products = [
     description:
       'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
     brand: 'Logitech',
-    category: 'Electronics',
+    category: 'Laptop',
     price: 49.99,
     countInStock: 7,
     rating: 3.5,
@@ -105,7 +105,7 @@ const products = [
     description:
       'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
     brand: 'Logitech',
-    category: 'Electronics',
+    category: 'Laptop',
     price: 49.99,
     countInStock: 7,
     rating: 3.5,

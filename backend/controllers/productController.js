@@ -1,12 +1,36 @@
 const Product = require('../model/productModel');
 const asyncHandler = require('express-async-handler');
+const APIFeatures = require('../utils/apiFeatures');
 
 // @desc    Fetch all products
 // @route   GET /api/products
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({});
-  res.json({ products });
+
+  const resPerPage = 12;
+  const productsCount = await Product.countDocuments();
+
+  const apiFeatures = new APIFeatures(Product.find(), req.query)
+      .search()
+      .filter()
+
+  let products = await apiFeatures.query;
+  let filteredProductsCount = products.length;
+
+  apiFeatures.pagination(resPerPage)
+  products = await apiFeatures.query;
+
+
+  res.status(200).json({
+      success: true,
+      productsCount,
+      resPerPage,
+      filteredProductsCount,
+      products
+  })
+
+  // const products = await Product.find({});
+  // res.json({ products });
 
   // const pageSize = 3
   // const page = Number(req.query.pageNumber) || 1
