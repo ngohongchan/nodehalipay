@@ -7,7 +7,7 @@ const APIFeatures = require('../utils/apiFeatures');
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
 
-  const resPerPage = 12;
+  const resPerPage = 8;
   const productsCount = await Product.countDocuments();
 
   const apiFeatures = new APIFeatures(Product.find(), req.query)

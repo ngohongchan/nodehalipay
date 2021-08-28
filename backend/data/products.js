@@ -29,6 +29,48 @@ const products = [
     featured: true
   },
   {
+    name: 'iPhone 11 Pro 256GB Memory',
+    image: 'https://res.cloudinary.com/dqirvmjn5/image/upload/v1629883847/img/haliapay/product-11-1_360x_l4bmbu.jpg',
+    description:
+      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Apple',
+    category: 'Apparel',
+    price: 599.99,
+    countInStock: 7,
+    rating: 4.0,
+    numReviews: 8,
+    sale: true,
+    featured: true
+  },
+  {
+    name: 'iPhone 11 Pro 256GB Memory',
+    image: 'https://res.cloudinary.com/dqirvmjn5/image/upload/v1629883848/img/haliapay/product-tivi-2_360x_qyx2oa.jpg',
+    description:
+      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Apple',
+    category: 'Apparel',
+    price: 599.99,
+    countInStock: 7,
+    rating: 4.0,
+    numReviews: 8,
+    sale: true,
+    featured: true
+  },
+  {
+    name: 'iPhone 11 Pro 256GB Memory',
+    image: 'https://res.cloudinary.com/dqirvmjn5/image/upload/v1629883847/img/haliapay/product-laptop-1_8ba38545-e982-4cc5-a601-9f7adb782d6f_hqmquj.jpg',
+    description:
+      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Apple',
+    category: 'Apparel',
+    price: 599.99,
+    countInStock: 7,
+    rating: 4.0,
+    numReviews: 8,
+    sale: true,
+    featured: true
+  },
+  {
     name: 'Cannon EOS 80D DSLR Camera',
     image: 'https://res.cloudinary.com/dqirvmjn5/image/upload/v1629883847/img/haliapay/product-11-1_360x_l4bmbu.jpg',
     description:
