@@ -53,7 +53,8 @@ const products = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
-    sale: true,
+    sale: false,
+    new: true,
     featured: true
   },
   {
@@ -67,7 +68,8 @@ const products = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
-    sale: true,
+    sale: false,
+    new: true,
     featured: true
   },
   {
@@ -138,7 +140,7 @@ const products = [
     rating: 3.5,
     numReviews: 10,
     sale: true,
-    new: true,
+    new: false,
     featured: true
   },
   {
@@ -152,7 +154,7 @@ const products = [
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
-    sale: true,
+    sale: false,
     new: true,
     featured: true
   },

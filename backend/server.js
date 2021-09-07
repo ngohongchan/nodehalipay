@@ -11,6 +11,7 @@ const uploadRoutes = require('./routes/uploadRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const brandRoutes = require('./routes/brandRoutes');
 const {  notFound, errorHandler  } = require('./middleware/errorMiddleware');
+const cities = require('./data/cities.json');
 
 dotenv.config();
 
@@ -37,6 +38,10 @@ app.use('/api/category', categoryRoutes);
 app.use('/api/brand', brandRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
+
+app.get('/api/cities', (req, res) => {
+  res.json(cities);
+});
 
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
